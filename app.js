@@ -109,7 +109,7 @@ function clearForm(){
 
 addBtn.addEventListener('click',function(){
     if(title.value==(null||undefined||"")||author.value==(null||undefined||"")||page.value==(null||undefined||"")){
-        alert("Enter valid title/")
+        alert("Enter valid title or authur or page numbers")
     }else{
         library.push(new book(title.value,author.value,page.value,readOrNot.checked))
         addBook(library.length-1)
