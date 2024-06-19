@@ -1,0 +1,193 @@
+:root{
+    --brown:#c4a07b;
+    --blue:rgba(6, 20, 76, 0.788);
+    --brown-text:#35210b;
+    --main:#F8F4E1;
+    --white:rgb(240, 240,240);
+    --red:rgb(237, 57, 57);
+    --green: #478647;
+}
+
+body{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    color: var(--brown-text);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+.aside{
+    background-color: var(--brown);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.book{
+    width: 80px;
+    fill: var(--brown-text) ;
+    margin-right: 30px;
+}
+
+header{
+    font-size:1.5rem;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;   
+    color: var(--brown-text) ;
+}
+
+.input-holder{
+    position: relative;
+}
+input{
+    background-color: transparent;
+    width: 80%;
+    padding: 10px;
+    overflow: none;
+    outline: none;
+    border:2px solid rgba(0, 0, 0, 0.338);
+    margin:15px 10px;
+    font-size: large;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.checkbox-label{
+    position: relative;
+    top:0em;
+    left: -5px;
+    font-size: large;
+}
+
+.checkbox-holder{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: red 1px solid; */
+    margin:10px 0px  20px;
+}
+label{
+    position: absolute;
+    background-color: var(--brown);
+    top:3.5px;
+    left: 1em;
+    font-size: large;
+    padding:1px 10px;
+}
+
+#read{
+    width: 35px;
+    height: 20px;
+    accent-color: var(--brown-text);
+    cursor: pointer;
+    border: none;
+}
+
+
+
+.add-book{
+    margin: 0px 10px;
+    border: none;
+    width: 200px;
+    padding: 20px;
+    font-size: large;
+    background-color: var(--white);
+    color: var(--brown-text);
+    font-weight: 550;
+    border-radius:2px ;
+    font-weight: 545;
+}
+
+.add-book:hover{
+    background-color: rgb(233, 230, 230);
+    cursor: pointer;
+}
+
+.container{
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status{
+    display: flex;
+    margin: 30px;
+}
+
+.status-text{
+    font-size: 1.3em;
+    margin: 10px 30px;
+    font-weight: 200;
+}
+
+.delete-all{
+    margin: 0px 30px;
+    border: none;
+    background-color:var(--red) ;
+    color: var(--white);
+    font-size: 1.1em;
+    padding: 15px;
+}
+
+.red:hover{
+    background-color: rgb(208, 53, 53);
+    cursor: pointer;
+}
+
+.heading{
+    display: flex;
+    background-color: var(--brown-text);
+    color: var(--white);
+}
+
+
+table td{
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 25px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: var(--brown-text) dotted 3px;
+}
+
+.cross{
+    width: 35px;
+    stroke: var(--red);
+    fill: var(--red) ;
+}
+
+.tick{
+    width: 35px;
+    stroke: var(--green);
+}
+.dustbin{
+    width: 20px;
+    stroke: var(--red);
+    fill: var(--red) ;
+}
+
+svg:hover{
+    fill: rgb(168, 59, 59);
+    stroke: rgb(168, 59, 59);
+    cursor: pointer;
+}
